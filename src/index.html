@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">  
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rick & Morty</title>
+    <link rel="stylesheet" href="src/app/assets/icomoon/style.css">
+</head>
+
+<body>
+    <div class="b-container">
+        <span id="btnMenu" class="b-absoluto b-icono icon-burguer-icon"></span>
+        <div id="header" class="b-header">
+            <div class="b-header__logo">
+                <img class="b-header__img" src="/src/app/assets/img/Rick_and_Morty_-_logo_(English).png" alt="">
+            </div>
+            <div class="b-header__links">
+                <div class="b-header__link"><a href="#">Personajes</a></div>
+                <div class="b-header__link"><a href="#">Localización</a></div>
+                <div class="b-header__link"><a href="#">Capitulos</a></div>
+            </div>
+        </div>
+        <div class="b-intro"> 
+            <div class="b-intro__imagen">
+                <img class="b-intro__img" src="/src/app/assets/img/rick-and-morty-transparent.png" alt="">
+            </div>
+            <div class="b-intro__form">
+                <form id="form" class="b-form">
+                    <div class="b-form__container"><h2 class="b-form__title">Encuentra tu personaje</h2></div>
+                    <div class="b-form__container">
+                        <select class="b-form__select" name="status" id="Alive">
+                            <option value="" disabled selected>Status</option>
+                        </select>
+                    </div>
+                    <div class="b-form__container">
+                        <select class="b-form__select" name="specie" id="Human">
+                            <option value="" disabled selected>Specie</option>
+                        </select>
+                    </div>
+                    <div class="b-form__container">
+                        <select class="b-form__select" name="gender" id="Male">
+                            <option value="" disabled selected>Gender</option>
+                        </select>
+                    </div>
+                    <div class="b-form__container">
+                        <input class="b-form__select" type="text" id="nombre" name="nombre" placeholder="Nombre">
+                    </div>
+                    <div class="b-form__container">
+                        <input class="b-button b-button--amarillo" id="filter" value="Aplicar" type="submit">
+                    </div>
+                    <div class="b-form__container">
+                        <input class="b-button b-button--rosa" id="all" type="button" value=" Buscar todos">
+                    </div>
+                    <div id="mensaje_alerta" class="b-form__alerta"></div>
+                </form>
+            </div>
+        </div>
+        <div id="container_info" class="c-info"></div>
+        <div id="container_characters" class="b-main"></div>
+        <div class="b-footer">
+            <div class="b-footer__logo">
+                <p class="b-footer__text">All rights reserved</p>
+                <img class="b-footer__img" src="/src/app/assets/img/Rick_and_Morty_-_logo_(English).png" alt="">
+            </div>
+        </div>
+        <div id="btn-up" class="b-arriba"><p class="b-arriba__text">Down</p></div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,15 @@
+.b-container {
+    position: relative;
+    min-height: 100vh;
+    
+    // ----- >
+
+    @media (max-width: 600px) {
+        padding-top: 100px;
+    }
+
+    background-image: url(/src/app/assets/img/universe.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment:fixed;
+}

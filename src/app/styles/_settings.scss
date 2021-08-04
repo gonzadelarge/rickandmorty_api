@@ -1,0 +1,9 @@
+.b-absoluto {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+
+    @media (min-width: 600px) {
+        display: none;
+    }
+}
